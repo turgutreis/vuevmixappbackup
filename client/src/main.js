@@ -2,10 +2,10 @@ import Vue from "vue";
 import App from "./App.vue";
 import store from "./store";
 import vuetify from "./plugins/vuetify";
-import VueSocketIOExt from "vue-socket.io-extended";
-import vueFlvPlayer from "vue-flv-player";
-import { io } from "socket.io-client";
 // const socket = io("https://vmixtestapp.herokuapp.com");
+import vueFlvPlayer from "vue-flv-player";
+import VueSocketIOExt from "vue-socket.io-extended";
+import { io } from "socket.io-client";
 const socket = io("http://localhost:3030");
 import GAuth from "vue-google-oauth2";
 //src/main.js

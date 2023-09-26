@@ -3,7 +3,7 @@ const cors = require("cors");
 const app = express();
 const server = require("http").createServer(app);
 // const globalIP = "https://stellular-brigadeiros-ee6bbc.netlify.app";
-const localIP = "https://localhost:8080";
+const localIP = "http://localhost:8080";
 const io = require("socket.io")(server, {
   cors: {
     origin: localIP,

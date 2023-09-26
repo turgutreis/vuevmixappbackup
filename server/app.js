@@ -20,8 +20,6 @@ configObj.appValue.use((req, res, next) => {
     "Origin, X-Requested-With, Content-Type, Accept, Authorization, Stripe-Signature"
   );
   res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
-  res.header("Access-Control-Allow-Origin", "http://localhost:8080/*")
-  res.header("Access-Control-Allow-Origin", "http://localhost:3030/*")
   next();
 });
 

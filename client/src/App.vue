@@ -53,58 +53,6 @@
       <v-chip label color="white" class="ml-2">
         <h3>Port: {{ portNr }}</h3>
       </v-chip>
-      <v-col cols="12" sm="3" md="2">
-        <input
-          type="file"
-          id="filepicker"
-          name="fileList"
-          webkitdirectory
-          multiple
-        />
-        <!-- <v-select
-          v-model="select"
-          outlined
-          :items="items"
-          :rules="[(v) => !!v || 'Item is required']"
-          label="Datei wählen"
-          required
-          class=""
-          hide-details
-          persistent-hint
-          solo
-        ></v-select> -->
-      </v-col>
-      <!-- <v-text-field
-        class="mt-7"
-        v-model="ip"
-        @change="changeIP"
-        label="IP Adresse"
-        solo
-      >
-        <template v-slot:append>
-          <font-awesome-icon
-            v-if="status"
-            class="status"
-            style="font-size: 25px"
-            icon="circle"
-            color="#76FF03"
-          />
-          <font-awesome-icon
-            v-else
-            class="status"
-            style="font-size: 25px"
-            icon="circle"
-            color="red"
-          />
-        </template>
-      </v-text-field>
-      <v-text-field
-        class="mt-7"
-        label="Port"
-        v-model="portNr"
-        solo
-      >
-      </v-text-field> -->
       <v-menu
         v-model="menuForRTMP"
         :close-on-content-click="false"
@@ -441,20 +389,20 @@ export default {
     // this.receiveActivePreset();
     // this.$socket.client.on("connect")
     // Contextmenu wird nicht angezeigt
-    document.getElementById("filepicker").addEventListener(
-      "change",
-      (event) => {
-        // let output = document.getElementById("listing");
-        console.log(event.target.files)
-        // for (const file of event.target.files) {
-        //   let item = document.createElement("li");
-        //   item.textContent = file.webkitRelativePath;
-        //   console.log(file)
-        //   output.appendChild(item);
-        // }
-      },
-      false
-    );
+    // document.getElementById("filepicker").addEventListener(
+    //   "change",
+    //   (event) => {
+    //     // let output = document.getElementById("listing");
+    //     console.log(event.target.files)
+    //     // for (const file of event.target.files) {
+    //     //   let item = document.createElement("li");
+    //     //   item.textContent = file.webkitRelativePath;
+    //     //   console.log(file)
+    //     //   output.appendChild(item);
+    //     // }
+    //   },
+    //   false
+    // );
     window.addEventListener(
       "contextmenu",
       function (e) {
